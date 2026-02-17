@@ -1,0 +1,81 @@
+{
+  "project_name": "NetTrust Nepal - 2-Class Model",
+  "model_version": "5.0 - Evil Twin & Rogue WiFi Only",
+  "creation_date": "2025-12-25T17:31:24.840712",
+  "num_classes": 2,
+  "classes": [
+    "Evil_Twin",
+    "Rogue_AP"
+  ],
+  "detection_focus": "Evil Twin and Rogue WiFi only",
+  "false_positive_reduction": "High threshold with conservative model",
+  "dataset_info": {
+    "total_samples": 39988,
+    "train_samples": 23992,
+    "val_samples": 7998,
+    "test_samples": 7998,
+    "samples_per_class": 20000,
+    "num_features": 40
+  },
+  "model_architecture": {
+    "type": "Random Forest",
+    "n_estimators": 150,
+    "max_depth": 6,
+    "min_samples_split": 20,
+    "min_samples_leaf": 10
+  },
+  "performance": {
+    "train_accuracy": 0.8869206402134044,
+    "val_accuracy": 0.8873468367091772,
+    "test_accuracy": 0.886721680420105,
+    "cv_mean": 0.8960489458646945,
+    "cv_std": 0.011040454867552087,
+    "overfitting_gap": 0.0001989597932994247
+  },
+  "recommended_thresholds": {
+    "Evil_Twin": 0.65,
+    "Rogue_AP": 0.6
+  },
+  "selected_features": [
+    "frame.encap_type",
+    "frame.len",
+    "frame.time_delta",
+    "frame.time_delta_displayed",
+    "frame.time_relative",
+    "radiotap.channel.flags.ofdm",
+    "radiotap.channel.freq",
+    "radiotap.datarate",
+    "radiotap.dbm_antsignal",
+    "wlan.duration",
+    "wlan.da",
+    "wlan.fc.type",
+    "wlan.fc.subtype",
+    "wlan.fixed.capabilities.ibss",
+    "wlan.fixed.reason_code",
+    "wlan_radio.duration",
+    "wlan_radio.channel",
+    "wlan_radio.data_rate",
+    "wlan_radio.frequency",
+    "wlan_radio.signal_dbm",
+    "wlan_radio.phy",
+    "ip.proto",
+    "ip.ttl",
+    "ip.version",
+    "data.len",
+    "tcp.ack",
+    "tcp.ack_raw",
+    "tcp.dstport",
+    "tcp.flags.ack",
+    "tcp.seq",
+    "tcp.seq_raw",
+    "tcp.srcport",
+    "tcp.time_relative",
+    "udp.srcport",
+    "nbss.continuation_data",
+    "smb2.session_flags",
+    "dhcp.client_id.duid_ll_hw_type",
+    "dns.time",
+    "http.request.line",
+    "ssh.padding_string"
+  ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FF9800</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Threat Level Colors -->
+    <color name="threat_safe">#4CAF50</color>
+    <color name="threat_low">#FFC107</color>
+    <color name="threat_medium">#FF9800</color>
+    <color name="threat_high">#F44336</color>
+    <color name="threat_critical">#D32F2F</color>
+
+    <!-- Additional Threat Colors (for layouts) -->
+    <color name="threat_red">#F44336</color>
+    <color name="threat_orange">#FF9800</color>
+    <color name="threat_yellow">#FFC107</color>
+    <color name="threat_green">#4CAF50</color>
+
+    <!-- Warning Colors -->
+    <color name="warning_light">#FFF9C4</color>
+
+    <!-- Signal Strength Colors -->
+    <color name="signal_excellent">#4CAF50</color>
+    <color name="signal_good">#8BC34A</color>
+    <color name="signal_fair">#FF9800</color>
+    <color name="signal_poor">#F44336</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_rogue_ap">#D32F2F</color>
+    <color name="badge_text">#FFFFFF</color>
+
+    <!-- Switch Colors -->
+    <color name="switch_thumb">#1976D2</color>
+    <color name="switch_track">#BBDEFB</color>
+</resources>
